@@ -1,0 +1,391 @@
+{
+  "id": "e9141425-61ff-4730-9333-434608f05d42",
+  "version": "2.0",
+  "name": "Selenium_Test",
+  "url": "https://shopping.rediff.com/",
+  "tests": [{
+    "id": "1f836e5e-299a-4456-8909-82f8f5c8c953",
+    "name": "Open_Website",
+    "commands": [{
+      "id": "4f8cd5fa-fa70-4352-99a0-5f01f2275967",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29772c24-7b41-445e-8902-3f12b3015ddc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eabdbbab-682f-47e5-bc5e-4985bf36529d",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Rediffmail shopping"
+    }, {
+      "id": "a6251b9e-5dc4-4301-933b-a08f25f9973c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "88b0a6ca-60e3-45d9-acfa-038fe2426045",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tF2Cxc > .yuRUbf .LC20lb",
+      "targets": [
+        ["css=.tF2Cxc > .yuRUbf .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Online Shopping Site India: Shop Online At Best ... - Rediff.com')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f26d01c6-7683-45ff-b4cb-2c400165b40a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.shoptoplogo",
+      "targets": [
+        ["css=.shoptoplogo", "css:finder"],
+        ["xpath=//img[@alt='Online Shopping Site in India']", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d04130cb-d1d3-4e3b-b1d4-6f0052bff0bc",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2b25d099-b4a9-4130-a7e5-111a8decb792",
+    "name": "Login_authentication",
+    "commands": [{
+      "id": "3f0c257d-82e6-49b2-945d-01d9792d7d71",
+      "comment": "",
+      "command": "open",
+      "target": "https://shopping.rediff.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "27411c88-3ce4-4865-b159-e40e416aa0c7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7fdb2656-86e7-4372-8bdb-7673ec943f72",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=#sigin_info > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In')]", "xpath:link"],
+        ["xpath=//span[@id='sigin_info']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1686045d-f6c3-48eb-a127-4784bc099323",
+      "comment": "",
+      "command": "click",
+      "target": "name=logid",
+      "targets": [
+        ["name=logid", "name"],
+        ["css=tr:nth-child(1) > .sb2 > input", "css:finder"],
+        ["xpath=//input[@name='logid']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b863c282-8b78-4309-a330-437d3217c2f7",
+      "comment": "",
+      "command": "type",
+      "target": "name=logid",
+      "targets": [
+        ["name=logid", "name"],
+        ["css=tr:nth-child(1) > .sb2 > input", "css:finder"],
+        ["xpath=//input[@name='logid']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "snrathod_m22@rediffmail.com"
+    }, {
+      "id": "9ab7b615-d277-4f6d-b299-7ac51a07dd81",
+      "comment": "",
+      "command": "click",
+      "target": "id=pswd",
+      "targets": [
+        ["id=pswd", "id"],
+        ["name=pswd", "name"],
+        ["css=#pswd", "css:finder"],
+        ["xpath=//input[@id='pswd']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ac9b230-f97b-43d2-a726-a1940ed6bc99",
+      "comment": "",
+      "command": "type",
+      "target": "id=pswd",
+      "targets": [
+        ["id=pswd", "id"],
+        ["name=pswd", "name"],
+        ["css=#pswd", "css:finder"],
+        ["xpath=//input[@id='pswd']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Vjti@3120"
+    }, {
+      "id": "fdba733d-4a3a-4e2c-a18e-7eea698786c1",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginsubmit",
+      "targets": [
+        ["id=loginsubmit", "id"],
+        ["css=#loginsubmit", "css:finder"],
+        ["xpath=//input[@id='loginsubmit']", "xpath:attributes"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2be6a7c-e5a9-4f24-8db4-073b88d6157f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign Out",
+      "targets": [
+        ["linkText=Sign Out", "linkText"],
+        ["css=#sigin_info > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign Out')]", "xpath:link"],
+        ["xpath=//span[@id='sigin_info']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '//shopping.rediff.com/signout')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a956b81-1666-4da6-aa1e-1956cd124733",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4df1d5b0-582b-4830-b95b-8a91d3846dd4",
+    "name": "Search_item",
+    "commands": [{
+      "id": "86bf4dc6-e1c9-4192-b7a4-044e225477ec",
+      "comment": "",
+      "command": "open",
+      "target": "https://shopping.rediff.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15cb6201-e657-44e5-89b2-fb603aa2a625",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b258cd0d-4804-47d6-8993-57b24e04b619",
+      "comment": "",
+      "command": "click",
+      "target": "id=srchword",
+      "targets": [
+        ["id=srchword", "id"],
+        ["name=srchword", "name"],
+        ["css=#srchword", "css:finder"],
+        ["xpath=//input[@id='srchword']", "xpath:attributes"],
+        ["xpath=//div[@id='div_srchcontainer']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c9fa7f8e-3185-4f1b-a14d-3b6573daa4c1",
+      "comment": "",
+      "command": "type",
+      "target": "id=srchword",
+      "targets": [
+        ["id=srchword", "id"],
+        ["name=srchword", "name"],
+        ["css=#srchword", "css:finder"],
+        ["xpath=//input[@id='srchword']", "xpath:attributes"],
+        ["xpath=//div[@id='div_srchcontainer']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Samsung"
+    }, {
+      "id": "387c7a6c-911d-4bf0-8089-8d6c53a01adf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.newsrchbtn",
+      "targets": [
+        ["css=.newsrchbtn", "css:finder"],
+        ["xpath=//input[@value='Search']", "xpath:attributes"],
+        ["xpath=//div[@id='div_srchcontainer']/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3be6036-000e-4038-82e8-a652b620a642",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Samsung: Buy Samsung Online at Best Price in India - Rediff Shopping",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c518f4f-3e7c-492d-ae38-5325534f11ba",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "862e80c1-0f5d-41b2-9532-51cb8129ebde",
+    "name": "Add_cart",
+    "commands": [{
+      "id": "f1182755-21cf-46b0-bb52-763372860166",
+      "comment": "",
+      "command": "open",
+      "target": "https://shopping.rediff.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "890130dd-facf-4a62-925a-b906aa53ef30",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c904d98d-0922-4e53-aa79-756b2f3f5d35",
+      "comment": "",
+      "command": "type",
+      "target": "id=srchword",
+      "targets": [
+        ["id=srchword", "id"],
+        ["name=srchword", "name"],
+        ["css=#srchword", "css:finder"],
+        ["xpath=//input[@id='srchword']", "xpath:attributes"],
+        ["xpath=//div[@id='div_srchcontainer']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Samsung"
+    }, {
+      "id": "1bab0b2b-a453-4333-8cfd-f3a640c3d14f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=srchword",
+      "targets": [
+        ["id=srchword", "id"],
+        ["name=srchword", "name"],
+        ["css=#srchword", "css:finder"],
+        ["xpath=//input[@id='srchword']", "xpath:attributes"],
+        ["xpath=//div[@id='div_srchcontainer']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "db612355-4552-4989-bfdc-187fb69f2353",
+      "comment": "",
+      "command": "click",
+      "target": "css=#a_grid_display_21582849 img",
+      "targets": [
+        ["css=#a_grid_display_21582849 img", "css:finder"],
+        ["xpath=//img[@alt='Headset Handsfree Earphone For Samsung All Galaxy']", "xpath:img"],
+        ["xpath=//div[@id='a_grid_display_21582849']/div/h4/a/img", "xpath:idRelative"],
+        ["xpath=//h4/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98a06663-8ed7-438d-8441-8b402339930e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.addtocartbtnbig",
+      "targets": [
+        ["css=.addtocartbtnbig", "css:finder"],
+        ["xpath=//input[@value='Buy now']", "xpath:attributes"],
+        ["xpath=//div[@id='div_prc_ship']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4118c866-daea-4906-8f3a-793e2cef297b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "711f6e6a-1863-4475-b8c5-8e97cebe4336",
+    "name": "View_cart",
+    "commands": [{
+      "id": "6ab439a4-2d59-4d5b-ac65-06620b790cfa",
+      "comment": "",
+      "command": "open",
+      "target": "https://shopping.rediff.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de860259-0b6f-488e-a283-678e339205ef",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8787210-5ac2-477b-b38f-5fb0cd34b409",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cartitem_no",
+      "targets": [
+        ["css=.cartitem_no", "css:finder"],
+        ["xpath=//span/i", "xpath:position"],
+        ["xpath=//i[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "421a4108-e382-4e2e-a938-41b5bf28da68",
+      "comment": "",
+      "command": "//close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "39eb9111-ec5a-4463-bd50-7adcffeeab5c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.google.com/", "https://shopping.rediff.com/"],
+  "plugins": []
+}
